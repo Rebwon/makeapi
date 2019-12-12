@@ -20,6 +20,18 @@ public class ExceptionAdvice {
     private final ResponseService responseService;
     private final MessageSource messageSource;
 
+    @ExceptionHandler(CNotOwnerException.class)
+    @ResponseStatus(HttpStatus.NON_AUTHORITATIVE_INFORMATION)
+    public CommonResult notOwnerException(HttpServletRequest request, CNotOwnerException e) {
+        return responseService.getFailResult(Integer.valueOf(getMessage("notOwner.code")), getMessage("notOwner.msg"));
+    }
+
+    @ExceptionHandler(CResourceNotExistException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public CommonResult resourceNotExistException(HttpServletRequest request, CResourceNotExistException e) {
+        return responseService.getFailResult(Integer.valueOf(getMessage("resourceNotExist.code")), getMessage("resourceNotExist.msg"));
+    }
+
     @ExceptionHandler(CUserExistException.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public CommonResult communicationException(HttpServletRequest request, CUserExistException e) {
@@ -65,6 +77,7 @@ public class ExceptionAdvice {
     private String getMessage(String code) {
         return getMessage(code, null);
     }
+
     // code정보, 추가 argument로 현재 locale에 맞는 메시지를 조회합니다.
     private String getMessage(String code, Object[] args) {
         return messageSource.getMessage(code, args, LocaleContextHolder.getLocale());

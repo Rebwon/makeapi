@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43a37006-1269-4ad0-96c8-cc7aac09ad90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-alpha.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/advice/exception/CNotOwnerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/advice/exception/CResourceNotExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/controller/v1/board/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/board/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/board/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/common/CommonDateEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/model/board/ParamsPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/repo/BoardJpaRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/repo/PostJpaRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/service/board/BoardService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/Applications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/Applications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/advice/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/advice/ExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/config/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/config/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/exception_en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/exception_en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/exception_ko.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/exception_ko.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +57,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -178,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576110107049</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="spring profiles 설정">
+      <created>1576111846369</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576111846369</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,7 +214,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="spring profiles 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring profiles 설정" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
