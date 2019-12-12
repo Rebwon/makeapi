@@ -1,0 +1,20 @@
+logging:
+  level:
+    root: warn
+    com.rest.api: debug
+
+spring:
+  profiels: local
+  h2:
+    console:
+      enable: true
+  datasource:
+    data: classpath:data-h2.sql
+  jpa:
+    properties.hibernate:
+      hbm2ddl.auto: update
+      format_sql: true
+    showSql: true
+    generate-ddl: true
+  url:
+    base: http://localhost:8080

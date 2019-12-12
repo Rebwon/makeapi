@@ -1,15 +1,6 @@
-server:
-  port: 8080
-
 spring:
-  h2:
-    console:
-      enable: true
-  datasource:
-    data: classpath:data-h2.sql
-  jpa:
-    properties.hibernate.hbm2ddl.auto: update
-    showSql: true
+  profiles:
+    active: local
   messages:
     basename: i18n/exception
     encoding: UTF-8
@@ -21,9 +12,8 @@ spring:
         login: https://kauth.kakao.com/oauth/authorize
         token: https://kauth.kakao.com/oauth/token
         profile: https://kapi.kakao.com/v2/user/me
-  url:
-    base: http://localhost:8080
-
+  jwt:
+    secret: govlepel@$&
 #spring:
 #  datasource:
 #    url: jdbc:h2:tcp://localhost/~/test
