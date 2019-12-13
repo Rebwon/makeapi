@@ -4,13 +4,14 @@ import com.rest.api.entity.common.CommonDateEntity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Builder
 @Entity
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Board extends CommonDateEntity {
+public class Board extends CommonDateEntity implements Serializable {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long boardId;
 

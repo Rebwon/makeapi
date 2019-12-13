@@ -6,13 +6,16 @@ import com.rest.api.entity.common.CommonDateEntity;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Getter
+@Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Post extends CommonDateEntity {
+public class Post extends CommonDateEntity implements Serializable {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long postId;
 
@@ -35,7 +38,7 @@ public class Post extends CommonDateEntity {
 
     // Join 테이블이 Json 결과에 표시되지 않도록 처리
     @JsonIgnore
-    protected Board getBoard(){
+    public Board getBoard(){
         return board;
     }
 

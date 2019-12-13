@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43a37006-1269-4ad0-96c8-cc7aac09ad90" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/advice/exception/CNotOwnerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/advice/exception/CResourceNotExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/controller/v1/board/BoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/board/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/board/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/common/CommonDateEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/model/board/ParamsPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/repo/BoardJpaRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/repo/PostJpaRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/service/board/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/common/CacheKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/config/EmbeddedRedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/service/cache/CacheService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/Applications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/Applications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/advice/ExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/advice/ExceptionAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/config/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/config/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/exception_en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/exception_en.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/i18n/exception_ko.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/i18n/exception_ko.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/board/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/board/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/board/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/entity/board/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/service/board/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/service/board/BoardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/service/security/CustomUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/service/security/CustomUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-local.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +42,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="api" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="api" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -81,7 +88,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../copy-project" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
@@ -165,8 +172,48 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="api [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="api [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.api [build]" />
+        <item itemvalue="Gradle.api [clean]" />
         <item itemvalue="Gradle.SignControllerTest" />
         <item itemvalue="Gradle.UserJpaRepoTest" />
         <item itemvalue="Application.Applications" />
@@ -198,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576111846369</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="간단한 게시판 서비스 생성 및 Exception 처리">
+      <created>1576130248473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576130248473</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +260,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -215,7 +271,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="spring profiles 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring profiles 설정" />
+    <MESSAGE value="간단한 게시판 서비스 생성 및 Exception 처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="간단한 게시판 서비스 생성 및 Exception 처리" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
